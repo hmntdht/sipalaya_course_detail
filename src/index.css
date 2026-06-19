@@ -1,0 +1,78 @@
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+ .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 16px 20px 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+ .card p {
+  margin: 0 20px 16px;
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;              /* ← standard property, silences the warning */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+ .btn-primary {
+  align-self: flex-start;
+  margin-top: auto;        /* ← pushes button to bottom of the card */
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #f5821f;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #d96c0f;
+}
+ 
+.btn-primary:focus-visible {
+  outline: 2px solid #f5821f;
+  outline-offset: 2px;
+}
+ 
